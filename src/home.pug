@@ -1,0 +1,184 @@
+extends layout.pug
+
+block variabl
+  - var title = "Home"
+
+block header
+  header.header
+
+    include include/top-line
+    
+    .header-content.header-content--home
+      .container
+
+        .text-head
+          h1 #[span Attract more] #[br] Private Patients
+          p Take the guess-work out of your new patient marketing.
+          a(href="#").button GET PATIENTS
+
+          .social-list
+            ul
+              li
+                a(href="#")
+                  +iconSvg('81', '156', '0 0 81 156', 'icon-facebook')
+              li
+                a(href="#")
+                  +iconSvg('24', '24', '0 0 24 24', 'icon-twitter')
+              li
+                a(href="#")
+                  +iconSvg('48', '48', '0 0 48 48', 'icon-in')
+        
+        .background-head
+          .background-head--position
+            img(src="img/headder-background.png", alt="").background-head--main
+            .background-head--line
+              //- img(src="img/line-background.png", alt="").background-head--line
+              img(src="img/line-background.png", alt="")
+
+              .text-line.text-line--one
+                p Consistent #[br] flow of patient
+              .text-line.text-line--two
+                p Measurable #[br] Marketing
+              .text-line.text-line--three
+                p Industry Insiders
+              .text-line.text-line--four
+                p Transparency & honesty
+
+
+block main
+  main.section_main
+
+    section.section-partner
+      .container
+        .partner-wrapper
+          .partner-items
+            img(src="img/partners/brand1.png", alt="")
+          .partner-items
+            img(src="img/partners/brand2.png", alt="")
+          .partner-items
+            img(src="img/partners/brand3.png", alt="")
+          .partner-items
+            img(src="img/partners/brand4.png", alt="")
+          .partner-items
+            img(src="img/partners/brand5.png", alt="")
+          .partner-items
+            img(src="img/partners/brand6.png", alt="")
+    
+    section.section-information
+      .container
+        .information-wrapper
+          .info-items(style="margin-top: 0px;")
+            .col-md-6
+              .info-items--images
+                img(src="img/bg-object1.svg", alt="").info-background
+                img(src="img/images-object1.png", alt="").info--images
+            .col-md-6
+              .info-items--text
+                h3 Consistent flow #[br] #[strong of patients]
+                p Word of mouth and referrals are great, but relying on them for growth is slow and unpredictable.
+                p Get a consistent flow of new patients so you can focus on growth instead of overheads.
+          .info-items(style="margin-top: 55px;")
+            .col-md-6
+              .info-items--text
+                h3 Measurable & #[br] #[strong effective marketing]
+                p Take the guess-work out of marketing – our campaigns have generated over 7-figures in treatment revenue.#[br] You’ll know the exact cost per enquiry, per consultation and per treated patient.
+            .col-md-6
+              .info-items--images
+                img(src="img/bg-object2.svg", alt="").info-background
+                img(src="img/images-object2.png", alt="").info--images
+          .info-items(style="margin-top: 115px;")
+            .col-md-6
+              .info-items--images
+                img(src="img/bg-object3.svg", alt="" ).info-background
+                img(src="img/images-object3.png", alt="" ).info--images
+            .col-md-6
+              .info-items--text
+                h3 Industry #[strong insiders]
+                p Maximising your ROI means knowing what it takes to get a patient into the clinic.
+                p We only work with healthcare businesses so we understand your patients inside-out.
+          .info-items(style="margin-top: 0px;")
+            .col-md-6
+              .info-items--text
+                h3 Transparency & #[br] #[strong honesty]
+                p Perhaps past marketing initiatives haven’t worked, you’ve been burnt or even outright misled.
+                p We build relationships on trust and transparency, leaving you in full control.
+            .col-md-6
+              .info-items--images
+                img(src="img/bg-object4.svg", alt="").info-background
+                img(src="img/images-object4.png", alt="" style="transform: translate(35px, 56px);").info--images
+
+    section.section-referrals
+      .container
+        .referrals-wrapper
+          .referrals-text
+            img(src="img/logo-referrals.png", alt="Logo Referrals")
+            p Referrals and word of mouth just #[br] not enough? Get in touch.
+          .referrals-button
+            a(href="#").button.button-referral GET NEW PATIENTS #[img(src="img/arrow.png", alt="")]
+    
+    section.section-case
+      .container
+        .case-wrapper
+          .slider-case
+            .case-items
+              .case-text
+                .case-text--item
+                  span Case Studies
+                  h3 Fusce tellus Sed metus augue convallis et vehiculapulvinar eu ante Integer orci
+                  p Praesent sit amet est In dictum dolor eu dictum porttitor #[br] enim felis viverra mi eget luctus massa purus
+                  .dot-slider
+                .case-text--item
+                  span Case Studies 2
+                  h3 Fusce tellus Sed metus augue convallis et vehiculapulvinar eu ante Integer orci
+                  p Praesent sit amet est In dictum dolor eu dictum porttitor #[br] enim felis viverra mi eget luctus massa purus
+                  .dot-slider
+              .case-images
+                .case-images--item
+                  img(src="img/tablet.png", alt="")
+                .case-images--item
+                  img(src="img/tablet.png", alt="")
+    
+    section.section-about(style="background: #636363 url(../img/about-background.png);")
+      .container
+        .about-wrapper
+          .about-text
+            h3 About ignite
+            p ignite is a healthcare growth agency that specialises in attracting high-value patients.
+            p Whether you’re an orthodontist, plastic surgeon, facial aesthetician or implant dentist, we know how to get you patients. We work with practices that are tired of waiting for referrals or word of mouth to grow their practice.
+            a(href="#").button.button-white LEARN MORE
+
+    section.section-number
+      .container
+        .number-wrapper
+          .number-items
+            h3 120
+            p Happy Clients
+          .number-items
+            h3 5.5k
+            p Leads Generated
+          .number-items
+            h3 14
+            p Years of Experience
+    
+    section.section-contact
+      .container
+        .contact-wrapper
+          .contact-heading
+            h3 Get in touch with us
+            p Lorem ipsum dolor sit amet consectetuer adipiscing elit Nam cursus Morbi ut mi Nullam enim leo egestas id condimentum at laoreet
+          form(action="")
+            .col-md-6
+              input(placeholder="First Name")
+            .col-md-6
+              input(placeholder="Last Name")
+            .col-md-6
+              input(placeholder="Phone Number")
+            .col-md-6
+              input(placeholder="Email address")
+            .col-md-12
+              textarea(placeholder="Message")
+            .contact-button
+              button.button SUBMIT
+
+
+    //- +iconSvg('34', '32', '0 0 34 32', 'icon-star')

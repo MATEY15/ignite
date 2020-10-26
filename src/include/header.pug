@@ -1,0 +1,42 @@
+header.header
+
+  include top-line
+  
+  .header-content.header-content--home
+    .container
+
+      .text-head
+        h1= title
+        h1 #[span Attract more] #[br] Private Patients
+        p Take the guess-work out of your new patient marketing.
+        a(href="#").button GET PATIENTS
+
+        .social-list
+          ul
+            li
+              a(href="#")
+                +iconSvg('81', '156', '0 0 81 156', 'icon-facebook')
+            li
+              a(href="#")
+                +iconSvg('24', '24', '0 0 24 24', 'icon-twitter')
+            li
+              a(href="#")
+                +iconSvg('48', '48', '0 0 48 48', 'icon-in')
+      
+      .background-head
+        .background-head--position
+          img(src="img/headder-background.png", alt="").background-head--main
+          .background-head--line
+            //- img(src="img/line-background.png", alt="").background-head--line
+            img(src="img/line-background.png", alt="")
+
+            .text-line.text-line--one
+              p Consistent #[br] flow of patient
+            .text-line.text-line--two
+              p Measurable #[br] Marketing
+            .text-line.text-line--three
+              p Industry Insiders
+            .text-line.text-line--four
+              p Transparency & honesty
+      
+

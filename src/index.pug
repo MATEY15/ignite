@@ -1,0 +1,76 @@
+extends layout.pug
+
+block variabl
+  - var title = "Page navigation"
+
+block header
+  header.header
+
+    include include/top-line
+    
+    .header-content.header-content--home
+      .container
+
+        .text-head
+          h1= title
+          a(href="#").button GET PATIENTS
+
+          .social-list
+            ul
+              li
+                a(href="#")
+                  +iconSvg('81', '156', '0 0 81 156', 'icon-facebook')
+              li
+                a(href="#")
+                  +iconSvg('24', '24', '0 0 24 24', 'icon-twitter')
+              li
+                a(href="#")
+                  +iconSvg('48', '48', '0 0 48 48', 'icon-in')
+        
+        .background-head
+          .background-head--position
+            img(src="img/headder-background.png", alt="").background-head--main
+            .background-head--line
+              //- img(src="img/line-background.png", alt="").background-head--line
+              img(src="img/line-background.png", alt="")
+
+              .text-line.text-line--one
+                p Consistent #[br] flow of patient
+              .text-line.text-line--two
+                p Measurable #[br] Marketing
+              .text-line.text-line--three
+                p Industry Insiders
+              .text-line.text-line--four
+                p Transparency & honesty
+
+
+block main
+  main.section_main
+
+    section.section-pages
+      .container
+        ul.navigation-page
+          li
+            a(href="home.html") Home
+          li
+            a(href="case.html") Case
+    
+    section.section-contact
+      .container
+        .contact-wrapper
+          .contact-heading
+            h3 Get in touch with us
+            p Lorem ipsum dolor sit amet consectetuer adipiscing elit Nam cursus Morbi ut mi Nullam enim leo egestas id condimentum at laoreet
+          form(action="")
+            .col-md-6
+              input(placeholder="First Name")
+            .col-md-6
+              input(placeholder="Last Name")
+            .col-md-6
+              input(placeholder="Phone Number")
+            .col-md-6
+              input(placeholder="Email address")
+            .col-md-12
+              textarea(placeholder="Message")
+            .contact-button
+              button.button SUBMIT

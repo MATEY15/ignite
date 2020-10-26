@@ -1,0 +1,104 @@
+extends layout.pug
+
+block variabl
+  - var title = "Case"
+
+block header
+  header.header
+
+    include include/top-line
+    
+    .header-content.header-content--home
+      .container
+
+        .text-head
+          h1 Case #[span Studies]
+
+          .social-list
+            ul
+              li
+                a(href="#")
+                  +iconSvg('81', '156', '0 0 81 156', 'icon-facebook')
+              li
+                a(href="#")
+                  +iconSvg('24', '24', '0 0 24 24', 'icon-twitter')
+              li
+                a(href="#")
+                  +iconSvg('48', '48', '0 0 48 48', 'icon-in')
+        
+        .background-head
+          .background-head--position
+            img(src="img/headder-background.png", alt="").background-head--main
+            //- .background-head--line
+              //- img(src="img/line-background.png", alt="").background-head--line
+              img(src="img/line-background.png", alt="")
+
+              .text-line.text-line--one
+                p Consistent #[br] flow of patient
+              .text-line.text-line--two
+                p Measurable #[br] Marketing
+              .text-line.text-line--three
+                p Industry Insiders
+              .text-line.text-line--four
+                p Transparency & honesty
+
+block main
+  main.section_main
+
+    section.section--default-text
+      .container
+        .default-text.text-center
+          p Proin dui lectus cursus eu mattis laoreet viverra #[br] sit amet quam curabitur vel dolor
+
+    section.section-overview
+      .container
+        .default-wrapper
+          .default-items.col-md-6
+            //- img(src="img/overview-bg.png", alt="").default-background
+            //- img(src="img/overview-img.png", alt="").default-img
+            img(src="img/owerview.png", alt="").default-img.marginLeft-i85
+            
+          .default-items.col-md-6.vertical-center
+            h3 OVERVIEW
+            p Afermentum nec hendrerit quis leo Pellentesque rutrum malesuada neque Nunc tempus felis vitae urna Vivamus porttitor neque at volutpAfermentum nec hendrerit quis leo Pellentesque rutrum malesuada neque Nunc tempus felis vitae urna Vivamus porttitor neque at volutpAfermentum nec hendrerit quis leo Pellentesque rutrum malesuada neque Nunc tempus felis vitae urna Vivamus porttitor neque at volutpat rutrum purus 
+            p nisi eleifend libero a tempus libero lectus feugiat felis Morbi diam mauris viverra in gravida eu mattis in ante Morbi eget arcu Morbi porta libero 
+            p id ligula pulvinar metus eget consectetuer augue nisi quis lacus Ut ac mi quis lacus mollis aliquam Curabitur iaculis tempus eros Curabitur vel mi sit amet magna malesuada ultrices Ut nisi erat fermentum vel congue id euismod in elit Fusce ultricies leo 
+          
+
+    section.section-number
+      .container
+        .number-heading.text-center
+          h3 RESULTS
+        .number-wrapper
+          .number-items
+            h3 120
+            p Happy Clients
+          .number-items
+            h3 5.5k
+            p Leads Generated
+          .number-items
+            h3 14
+            p Years of Experience
+    
+    section.section-contact
+      .container
+        .contact-wrapper
+          .contact-heading
+            h3 Get in touch with us
+            p Lorem ipsum dolor sit amet consectetuer adipiscing elit Nam cursus Morbi ut mi Nullam enim leo egestas id condimentum at laoreet
+          form(action="")
+            .col-md-6
+              input(placeholder="First Name")
+            .col-md-6
+              input(placeholder="Last Name")
+            .col-md-6
+              input(placeholder="Phone Number")
+            .col-md-6
+              input(placeholder="Email address")
+            .col-md-12
+              textarea(placeholder="Message")
+            .contact-button
+              button.button SUBMIT
+
+
+    //- +iconSvg('34', '32', '0 0 34 32', 'icon-star')
