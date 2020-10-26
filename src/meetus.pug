@@ -1,0 +1,148 @@
+extends layout.pug
+
+block variabl
+  - var title = "Meet Us"
+
+block header
+  header.header
+
+    include include/top-line
+    
+    .header-content.header-content--home
+      .container
+
+        .text-head
+          h1 Meet #[span Us]
+
+          .social-list
+            ul
+              li
+                a(href="#")
+                  +iconSvg('81', '156', '0 0 81 156', 'icon-facebook')
+              li
+                a(href="#")
+                  +iconSvg('24', '24', '0 0 24 24', 'icon-twitter')
+              li
+                a(href="#")
+                  +iconSvg('48', '48', '0 0 48 48', 'icon-in')
+        
+        .background-head
+          .background-head--position
+            img(src="img/headder-background.png", alt="").background-head--main
+            //- .background-head--line
+              //- img(src="img/line-background.png", alt="").background-head--line
+              img(src="img/line-background.png", alt="")
+
+              .text-line.text-line--one
+                p Consistent #[br] flow of patient
+              .text-line.text-line--two
+                p Measurable #[br] Marketing
+              .text-line.text-line--three
+                p Industry Insiders
+              .text-line.text-line--four
+                p Transparency & honesty
+
+block main
+  main.section_main
+
+    section.section--default-text
+      .container
+        .default-text.text-center
+          p Get ready to meet your marketing dream team
+
+    section.section-aboutus
+      .container
+        .aboutus-wrapper
+         .col-md-6.aboutus-img
+            img(src="img/aboutus-img.png", alt="").marginLeft-d175
+         .col-md-6.aboutus-text
+            h3 About Ignite
+            p Ignite is a healthcare growth agency that specialises in attracting high-value patients. Whether you’re an orthodontist, plastic surgeon, facial aesthetician or implant dentist, we know how to get you patients. 
+            p We work with practices that are tired of waiting for referrals or word of mouth to grow their practice. Practices that are tired of getting burnt and ready to invest in real growth, without compromising on care, value or price. Does that sound like you? Work with us.
+
+    section.section-work
+      .container
+        .work-heading.text-center
+          h3 #[span How] we work
+        .work-wrapper
+          .work-item--col.work-item--left
+            .work-item
+              .work-item-text
+                h4 Partnership
+                p We are probably more into you than you into us.  We have a buzzer that goes off every time you get a new patient.
+              .work-item-icon
+                img(src="img/work-icon1.png", alt="")
+            .work-item
+              .work-item-text
+                h4 Coaching 
+                p We don’t just send a flurry of leads to your receptionist. We coach you and your team until you get it right!
+              .work-item-icon
+                img(src="img/work-icon3.png", alt="")
+          .work-item--icon
+            img(src="img/logo-work.png", alt="")
+          .work-item--col.work-item--right
+            .work-item
+              .work-item-text
+                h4 Industry insiders
+                p We only work with healthcare businesses. This means we know the industry and your challenges inside-out.
+              .work-item-icon
+                img(src="img/work-icon2.png", alt="")
+            .work-item
+              .work-item-text
+                h4 Flexible 
+                p No long-term contracts. Work with us on a monthly rolling basis after our initial 3 month honeymoon period.
+              .work-item-icon
+                img(src="img/work-icon4.png", alt="")
+        
+    section.section-dreamteam
+      .container
+        .dreamteam-heading
+          h3 Your Marketing Dream Team
+        .dreamteam-wrapper
+          .dreamteam-items
+            .dreamteam-img
+              img(src="img/dreamteam-img1.png", alt="")
+            .dreamteam-text
+              h4 Derek
+              p Founder & CEO
+          .dreamteam-items
+            .dreamteam-img
+              img(src="img/dreamteam-img2.png", alt="")
+            .dreamteam-text
+              h4 Brenda
+              p Account Manager
+          .dreamteam-items
+            .dreamteam-img
+              img(src="img/dreamteam-img3.png", alt="")
+            .dreamteam-text
+              h4 Ken
+              p Campaign Manager
+          .dreamteam-items
+            .dreamteam-img
+              img(src="img/dreamteam-img4.png", alt="")
+            .dreamteam-text
+              h4 Sachin
+              p Account Manager
+
+    section.section-contact
+      .container
+        .contact-wrapper
+          .contact-heading
+            h3 Get in touch with us
+            p Lorem ipsum dolor sit amet consectetuer adipiscing elit Nam cursus Morbi ut mi Nullam enim leo egestas id condimentum at laoreet
+          form(action="")
+            .col-md-6
+              input(placeholder="First Name")
+            .col-md-6
+              input(placeholder="Last Name")
+            .col-md-6
+              input(placeholder="Phone Number")
+            .col-md-6
+              input(placeholder="Email address")
+            .col-md-12
+              textarea(placeholder="Message")
+            .contact-button
+              button.button SUBMIT
+
+
+    //- +iconSvg('34', '32', '0 0 34 32', 'icon-star')
