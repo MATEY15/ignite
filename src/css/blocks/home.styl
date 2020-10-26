@@ -209,6 +209,7 @@
 
 .number-wrapper
   display flex
+  flex-wrap wrap
   align-items center
   min-height 370px
   background: rgb(255,194,49)
@@ -217,6 +218,14 @@
   background-position center bottom
   brr(20px)
   box-shadow: 6px 6px 8px 4px rgba(0, 0, 0, 0.15)
+  .number-heading
+    width 100%
+    h3
+      color: #ffffff
+      font-family: fbh
+      font-size: 57px
+  .percent-items
+    width calc(100% / 3)
   .number-items
     width calc(100% / 3)
     text-align center

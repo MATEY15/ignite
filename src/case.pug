@@ -56,7 +56,7 @@ block main
           .default-items.col-md-6
             //- img(src="img/overview-bg.png", alt="").default-background
             //- img(src="img/overview-img.png", alt="").default-img
-            img(src="img/owerview.png", alt="").default-img.marginLeft-i85
+            img(src="img/owerview.png", alt="").default-img.marginLeft-d85
             
           .default-items.col-md-6.vertical-center
             h3 OVERVIEW
@@ -67,18 +67,27 @@ block main
 
     section.section-number
       .container
-        .number-heading.text-center
-          h3 RESULTS
         .number-wrapper
-          .number-items
-            h3 120
-            p Happy Clients
-          .number-items
-            h3 5.5k
-            p Leads Generated
-          .number-items
-            h3 14
-            p Years of Experience
+          .number-heading.text-center
+            h3 RESULTS
+          .percent-items
+            .percent-image
+              img(src="img/percent1.png", alt="")
+            .percent-text
+              h3 42%
+              p Fermentumnec
+          .percent-items
+            .percent-image
+              img(src="img/percent2.png", alt="")
+            .percent-text
+              h3 21%
+              p Morbi diam mauris
+          .percent-items
+            .percent-image
+              img(src="img/percent3.png", alt="")
+            .percent-text
+              h3 21%
+              p Etiam nulla mass
     
     section.section-contact
       .container
